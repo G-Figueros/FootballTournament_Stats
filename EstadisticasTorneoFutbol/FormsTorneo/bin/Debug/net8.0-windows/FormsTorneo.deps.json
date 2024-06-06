@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FormsTorneo/1.0.0": {
+        "dependencies": {
+          "clsEstructuraDatos": "1.0.0"
+        },
+        "runtime": {
+          "FormsTorneo.dll": {}
+        }
+      },
+      "clsEstructuraDatos/1.0.0": {
+        "runtime": {
+          "clsEstructuraDatos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FormsTorneo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "clsEstructuraDatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
