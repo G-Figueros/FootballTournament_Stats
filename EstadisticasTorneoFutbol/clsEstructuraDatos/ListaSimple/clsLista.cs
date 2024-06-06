@@ -30,7 +30,7 @@ namespace clsEstructuraDatos.ListaSimple
             for (indice = vtHeader; indice != null; indice = indice.Enlace)
             {
                 clsPlayer player = (clsPlayer)indice.Dato;
-                if (player.FullName == nombre[0])
+                if (player.name == nombre[0])
                 {
                     return player;
                 }
@@ -45,7 +45,7 @@ namespace clsEstructuraDatos.ListaSimple
             for (indice = vtHeader; indice != null; indice = indice.Enlace)
             {
                 clsPlayer player = (clsPlayer)indice.Dato;
-                if (player.FullName == nombre[0])
+                if (player.name == nombre[0])
                 {
                     indice.Dato = vDato;
                 }
