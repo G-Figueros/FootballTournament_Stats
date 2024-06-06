@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clsEstructuraDatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60b59b06ec201c8e085fdb26a135ec0d7b2c44e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21595f11e98ad3670a928d67226b32c009aaa26f")]
 [assembly: System.Reflection.AssemblyProductAttribute("clsEstructuraDatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clsEstructuraDatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

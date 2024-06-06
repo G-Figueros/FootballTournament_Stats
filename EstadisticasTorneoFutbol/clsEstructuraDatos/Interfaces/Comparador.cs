@@ -11,8 +11,11 @@ namespace clsEstructuraDatos.Interfaces
         bool igualQue(string q);
         bool menorQue(string q);
         bool mayorQue(string q);
+        bool igualQue(int q);
+        bool menorQue(int q);
+        bool mayorQue(int q);
         bool igualQue(Object q);
-        bool mayorQue(Object q);
         bool menorQue(Object q);
+        bool mayorQue(Object q);
     }
 }
