@@ -1,7 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="frmHome.cs">
+    <Compile Update="frmAmarillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmGoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmListaEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmListaJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmListaTorneos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmMenuEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmMenuTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmNuevoJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRojas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

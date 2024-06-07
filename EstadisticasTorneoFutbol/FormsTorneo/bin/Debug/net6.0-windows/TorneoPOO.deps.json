@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TorneoPOO/1.0.0": {
+        "dependencies": {
+          "clsTorneo": "1.0.0"
+        },
+        "runtime": {
+          "TorneoPOO.dll": {}
+        }
+      },
+      "clsTorneo/1.0.0": {
+        "runtime": {
+          "clsTorneo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TorneoPOO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "clsTorneo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
