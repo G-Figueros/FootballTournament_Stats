@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using clsEstructuraDatos.Interfaces;
+using clsEstructuraDatos.Modelos;
 
 namespace clsEstructuraDatos.ArbolAVL
 {
@@ -20,6 +21,285 @@ namespace clsEstructuraDatos.ArbolAVL
         public clsNodoAVL raizArbol()
         {
             return raiz;
+        }
+
+        protected Object buscar(clsNodoArbol raizSub, int buscado)
+        {
+            try
+            {
+                salto++;
+                clsBalanceo posicion = new clsBalanceo();
+                clsTeam team = (clsTeam)raizSub.valorNodo();
+                if (raizSub == null)
+                {
+                    return null;
+                }
+                else if (team.igualQue(buscado))
+                {
+                    posicion.team = team;
+                    posicion.balanceo = salto;
+                    return posicion;
+                }
+                else if (team.menorQue(buscado))
+                {
+                    return buscar(raizSub.subArbolDcho(), buscado);
+                }
+                else
+                {
+                    return buscar(raizSub.subArbolIzdo(), buscado);
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        protected Object buscarPorNombre(clsNodoArbol raizSub, string buscado)
+        {
+            try
+            {
+                clsTeam team = (clsTeam)raizSub.valorNodo();
+                if (raizSub == null)
+                {
+                    return null;
+                }
+                else if (team.igualQue(buscado))
+                {
+                    return team;
+                }
+                else if (team.menorQue(buscado))
+                {
+                    return buscarPorNombre(raizSub.subArbolDcho(), buscado);
+                }
+                else
+                {
+                    return buscarPorNombre(raizSub.subArbolIzdo(), buscado);
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public Object buscarPorNombre(string dato)
+        {
+            if (raiz == null)
+            {
+                return null;
+            }
+            else
+            {
+                return buscarPorNombre(raizArbol(), dato);
+            }
+        }
+
+        public Object buscar(int dato)
+        {
+            if (raiz == null)
+            {
+                return null;
+            }
+            else
+            {
+                return buscar(raizArbol(), dato);
+            }
+        }
+
+        public void actualizar(Object valor)
+        {
+            Comparador dato;
+            Logical h = new Logical(false);
+            dato = (Comparador)valor;
+            raiz = actualizarAvl(raiz, dato, h);
+        }
+
+        private clsNodoAVL actualizarAvl(clsNodoAVL raiz, Comparador dt, Logical h)
+        {
+            clsNodoAVL n1;
+            clsTeam team = (clsTeam)raiz.valorNodo();
+            if (dt.igualQue(team.name))
+            {
+                raiz.nuevoValor(dt);
+                h.setLogical(true);
+            }
+            else if (dt.menorQue(team.name))
+            {
+                clsNodoAVL iz;
+                iz = actualizarAvl((clsNodoAVL)raiz.subArbolIzdo(), dt, h);
+                raiz.ramaIzdo(iz);
+            }
+            else if (dt.mayorQue(team.name))
+            {
+                clsNodoAVL dr;
+                dr = actualizarAvl((clsNodoAVL)raiz.subArbolDcho(), dt, h);
+                raiz.ramaDcho(dr);
+            }
+            return raiz;
+        }
+
+        public void insertar(Object valor)//throws Exception
+        {
+            Comparador dato;
+            Logical h = new Logical(false); // intercambia un valor booleano
+            dato = (Comparador)valor;
+            raiz = insertarAvl(raiz, dato, h);
+        }
+
+        private clsNodoAVL insertarAvl(clsNodoAVL raiz, Comparador dt, Logical h)
+        //throws Exception
+        {
+            clsNodoAVL n1;
+            if (raiz == null)
+            {
+                raiz = new clsNodoAVL(dt);
+                this.posicion += 1;
+                h.setLogical(true);
+            }
+            else
+            {
+                clsTeam Team = (clsTeam)raiz.valorNodo();
+                if (dt.menorQue(Team.name))
+                {
+                    clsNodoAVL iz;
+                    iz = insertarAvl((clsNodoAVL)raiz.subArbolIzdo(), dt, h);
+                    raiz.ramaIzdo(iz);
+                    // regreso por los nodos del camino de búsqueda
+                    if (h.booleanValue())
+                    {
+                        // decrementa el fe por aumentar la altura de rama izquierda
+                        switch (raiz.fe)
+                        {
+                            case 1:
+                                raiz.fe = 0;
+                                h.setLogical(false);
+                                break;
+                            case 0:
+                                raiz.fe = -1;
+                                break;
+                            case -1: // aplicar rotación a la izquierda
+                                n1 = (clsNodoAVL)raiz.subArbolIzdo();
+                                if (n1.fe == -1)
+                                    raiz = rotacionII(raiz, n1);
+                                else
+                                    raiz = rotacionID(raiz, n1);
+                                h.setLogical(false);
+                                break;
+                        }
+                    }
+                }
+                else if (dt.mayorQue(Team.name))
+                {
+                    clsNodoAVL dr;
+                    dr = insertarAvl((clsNodoAVL)raiz.subArbolDcho(), dt, h);
+                    raiz.ramaDcho(dr);
+                    // regreso por los nodos del camino de búsqueda
+                    if (h.booleanValue())
+                    {
+                        // incrementa el fe por aumentar la altura de rama izquierda
+                        switch (raiz.fe)
+                        {
+                            case 1: // aplicar rotación a la derecha
+                                n1 = (clsNodoAVL)raiz.subArbolDcho();
+                                if (n1.fe == +1)
+                                    raiz = rotacionDD(raiz, n1);
+                                else
+                                    raiz = rotacionDI(raiz, n1);
+                                h.setLogical(false);
+                                break;
+                            case 0:
+                                raiz.fe = +1;
+                                break;
+                            case -1:
+                                raiz.fe = 0;
+                                h.setLogical(false);
+                                break;
+                        }
+                    }
+                }
+                else
+                    throw new Exception("No puede haber claves repetidas ");
+            }
+            return raiz;
+        }
+
+        public void eliminar(Object valor) //throws Exception
+        {
+            Comparador dato;
+            dato = (Comparador)valor;
+            Logical flag = new Logical(false);
+            raiz = borrarAvl(raiz, dato, flag);
+        }
+
+        private clsNodoAVL borrarAvl(clsNodoAVL r, Comparador clave, Logical cambiaAltura) //throws Exception
+        {
+            if (r == null)
+            {
+                throw new Exception(" Nodo no encontrado ");
+            }
+            else if (clave.menorQue(r.valorNodo()))
+            {
+                clsNodoAVL iz;
+                iz = borrarAvl((clsNodoAVL)r.subArbolIzdo(), clave, cambiaAltura);
+                r.ramaIzdo(iz);
+                if (cambiaAltura.booleanValue())
+                    r = equilibrar1(r, cambiaAltura);
+            }
+            else if (clave.mayorQue(r.valorNodo()))
+            {
+                clsNodoAVL dr;
+                dr = borrarAvl((clsNodoAVL)r.subArbolDcho(), clave, cambiaAltura);
+                r.ramaDcho(dr);
+                if (cambiaAltura.booleanValue())
+                    r = equilibrar2(r, cambiaAltura);
+            }
+            else // Nodo encontrado
+            {
+                clsNodoAVL q;
+                q = r; // nodo a quitar del árbol
+                if (q.subArbolIzdo() == null)
+                {
+                    r = (clsNodoAVL)q.subArbolDcho();
+                    cambiaAltura.setLogical(true);
+                }
+                else if (q.subArbolDcho() == null)
+                {
+                    r = (clsNodoAVL)q.subArbolIzdo();
+                    cambiaAltura.setLogical(true);
+                }
+                else
+                { // tiene rama izquierda y derecha
+                    clsNodoAVL iz;
+                    iz = reemplazar(r, (clsNodoAVL)r.subArbolIzdo(), cambiaAltura);
+                    r.ramaIzdo(iz);
+                    if (cambiaAltura.booleanValue())
+                        r = equilibrar1(r, cambiaAltura);
+                }
+                q = null;
+            }
+            return r;
+        }
+
+        private clsNodoAVL reemplazar(clsNodoAVL n, clsNodoAVL act, Logical cambiaAltura)
+        {
+            if (act.subArbolDcho() != null)
+            {
+                clsNodoAVL d;
+                d = reemplazar(n, (clsNodoAVL)act.subArbolDcho(), cambiaAltura);
+                act.ramaDcho(d);
+                if (cambiaAltura.booleanValue())
+                    act = equilibrar2(act, cambiaAltura);
+            }
+            else
+            {
+                n.nuevoValor(act.valorNodo());
+                n = act;
+                act = (clsNodoAVL)act.subArbolIzdo();
+                n = null;
+                cambiaAltura.setLogical(true);
+            }
+            return act;
         }
 
         private clsNodoAVL rotacionII(clsNodoAVL n, clsNodoAVL n1)
@@ -96,7 +376,6 @@ namespace clsEstructuraDatos.ArbolAVL
             return n2;
         }
 
-
         private clsNodoAVL equilibrar1(clsNodoAVL n, Logical cambiaAltura)
         {
             clsNodoAVL n1;
@@ -166,6 +445,22 @@ namespace clsEstructuraDatos.ArbolAVL
             return new clsNodoAVL(dato, ramaIzqda, ramaDrcha);
         }
 
+        public static List<clsTeam> orden(clsNodoArbol r, List<clsTeam> lista)
+        {
+            if (r != null)
+            {
+                lista.Add((clsTeam)r.valorNodo());
+                if (r.subArbolIzdo() != null)
+                {
+                    orden(r.subArbolIzdo(), lista);
+                }
+                if (r.subArbolDcho() != null)
+                {
+                    orden(r.subArbolDcho(), lista);
+                }
+            }
+            return lista;
+        }
 
         //binario en preorden
         public static string preorden(clsNodoArbol r)
