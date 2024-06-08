@@ -15,12 +15,10 @@ namespace clsEstructuraDatos.Modelos
         public string league { get; set; }
         public string stadium { get; set; }
         public int points { get; set; }
-        public int homeMatches { get; set; }
-        public int victoryHomeMatches { get; set; }
-        public int loseHomeMatches { get; set; }
-        public int awayMatches { get; set; }
-        public int victoryAwayMatches { get; set; }
-        public int loseAwayMatches { get; set; }
+        public int matches { get; set; }
+        public int victoryMatches { get; set; }
+        public int loseMatches { get; set; }
+        public int drawMatches { get; set; }
 
         public clsTeam(int id, string nameNw, string countryNw, string leagueNw, string stadium)
         {
@@ -30,12 +28,10 @@ namespace clsEstructuraDatos.Modelos
             this.league = leagueNw;
             this.stadium = stadium;
             this.points = 0;
-            this.homeMatches = 0;
-            this.victoryHomeMatches = 0;
-            this.loseHomeMatches = 0;
-            this.awayMatches = 0;
-            this.victoryAwayMatches = 0;
-            this.loseAwayMatches = 0;
+            this.matches = 0;
+            this.victoryMatches = 0;
+            this.loseMatches = 0;
+            this.drawMatches = 0;
         }
 
         public bool igualQue(string q)
