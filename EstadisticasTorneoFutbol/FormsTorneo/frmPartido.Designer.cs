@@ -28,19 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblTituloInicial = new Label();
             SuspendLayout();
+            // 
+            // lblTituloInicial
+            // 
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(181, 40);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(103, 31);
+            lblTituloInicial.TabIndex = 6;
+            lblTituloInicial.Text = "Partidos";
             // 
             // frmPartido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(480, 340);
+            Controls.Add(lblTituloInicial);
             Name = "frmPartido";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPartido";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblTituloInicial;
     }
 }

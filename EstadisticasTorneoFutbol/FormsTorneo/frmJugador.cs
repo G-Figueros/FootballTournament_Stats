@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clsEstructuraDatos.TablasHash;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,19 @@ namespace TorneoPOO
 {
     public partial class frmJugador : Form
     {
-        public frmJugador()
+        public clsTablaHashPlayer tablaHashPlayer;
+        public clsTablaHashTournament tablaHashTournament;
+
+        public frmJugador(clsTablaHashPlayer tablaHashPlayerNw, clsTablaHashTournament tablaHashTournament)
         {
+            this.tablaHashPlayer = tablaHashPlayerNw;
+            this.tablaHashTournament = tablaHashTournament;
             InitializeComponent();
         }
 
         private void btnNuevoJugador_Click(object sender, EventArgs e)
         {
-            frmNuevoJugador nuevoJugador = new frmNuevoJugador();
+            frmNuevoJugador nuevoJugador = new frmNuevoJugador(tablaHashPlayer, tablaHashTournament);
             nuevoJugador.Show();
         }
 

@@ -104,6 +104,7 @@
             btnMenuPartidos.TabIndex = 5;
             btnMenuPartidos.Text = "Menu Partidos";
             btnMenuPartidos.UseVisualStyleBackColor = false;
+            btnMenuPartidos.Click += btnMenuPartidos_Click;
             // 
             // frmMenu
             // 

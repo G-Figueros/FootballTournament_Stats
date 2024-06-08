@@ -30,6 +30,7 @@
         {
             lblTituloInicial = new Label();
             btnDetallePartidos = new Button();
+            btnNuevoPartido = new Button();
             SuspendLayout();
             // 
             // lblTituloInicial
@@ -54,12 +55,25 @@
             btnDetallePartidos.Text = "Detalle Partidos";
             btnDetallePartidos.UseVisualStyleBackColor = false;
             // 
+            // btnNuevoPartido
+            // 
+            btnNuevoPartido.BackColor = Color.MediumSeaGreen;
+            btnNuevoPartido.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnNuevoPartido.Location = new Point(48, 66);
+            btnNuevoPartido.Name = "btnNuevoPartido";
+            btnNuevoPartido.Size = new Size(227, 43);
+            btnNuevoPartido.TabIndex = 9;
+            btnNuevoPartido.Text = "Nuevo Partido";
+            btnNuevoPartido.UseVisualStyleBackColor = false;
+            btnNuevoPartido.Click += btnNuevoPartido_Click;
+            // 
             // frmMenuPartidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(327, 248);
+            Controls.Add(btnNuevoPartido);
             Controls.Add(btnDetallePartidos);
             Controls.Add(lblTituloInicial);
             Name = "frmMenuPartidos";
@@ -73,5 +87,6 @@
 
         private Label lblTituloInicial;
         private Button btnDetallePartidos;
+        private Button btnNuevoPartido;
     }
 }

@@ -23,7 +23,7 @@ namespace TorneoPOO
 
         private void btnNuevoTorneo_Click(object sender, EventArgs e)
         {
-            frmTorneo torneo = new frmTorneo(this.tablaHashTournament, true, ""); //[0]:EnviarDatosGlobalesPorSesion [1]:BooleanoParaInsertarActualizar
+            frmTorneo torneo = new frmTorneo(this.tablaHashTournament, true, ""); //[0]:EnviarDatosGlobalesPorSesion [1]:BooleanoParaInsertarActualizar [2]:ClaveActualizando
             torneo.Show();
         }
 
