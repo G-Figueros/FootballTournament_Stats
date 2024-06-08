@@ -28,92 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.btnGuardarAmarillas = new System.Windows.Forms.Button();
-            this.lblJugador = new System.Windows.Forms.Label();
-            this.cmbJugador = new System.Windows.Forms.ComboBox();
-            this.upCantidad = new System.Windows.Forms.NumericUpDown();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.upCantidad)).BeginInit();
-            this.SuspendLayout();
+            lblTituloInicial = new Label();
+            btnGuardarAmarillas = new Button();
+            lblJugador = new Label();
+            cmbJugador = new ComboBox();
+            upCantidad = new NumericUpDown();
+            lblCantidad = new Label();
+            ((System.ComponentModel.ISupportInitialize)upCantidad).BeginInit();
+            SuspendLayout();
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(110, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(115, 31);
-            this.lblTituloInicial.TabIndex = 2;
-            this.lblTituloInicial.Text = "Amarillas";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(110, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(115, 31);
+            lblTituloInicial.TabIndex = 2;
+            lblTituloInicial.Text = "Amarillas";
             // 
             // btnGuardarAmarillas
             // 
-            this.btnGuardarAmarillas.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnGuardarAmarillas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarAmarillas.Location = new System.Drawing.Point(54, 173);
-            this.btnGuardarAmarillas.Name = "btnGuardarAmarillas";
-            this.btnGuardarAmarillas.Size = new System.Drawing.Size(227, 43);
-            this.btnGuardarAmarillas.TabIndex = 7;
-            this.btnGuardarAmarillas.Text = "Guardar";
-            this.btnGuardarAmarillas.UseVisualStyleBackColor = false;
-            this.btnGuardarAmarillas.Click += new System.EventHandler(this.btnGuardarAmarillas_Click);
+            btnGuardarAmarillas.BackColor = Color.MediumSeaGreen;
+            btnGuardarAmarillas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnGuardarAmarillas.Location = new Point(54, 173);
+            btnGuardarAmarillas.Name = "btnGuardarAmarillas";
+            btnGuardarAmarillas.Size = new Size(227, 43);
+            btnGuardarAmarillas.TabIndex = 7;
+            btnGuardarAmarillas.Text = "Guardar";
+            btnGuardarAmarillas.UseVisualStyleBackColor = false;
+            btnGuardarAmarillas.Click += btnGuardarAmarillas_Click;
             // 
             // lblJugador
             // 
-            this.lblJugador.AutoSize = true;
-            this.lblJugador.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJugador.Location = new System.Drawing.Point(39, 113);
-            this.lblJugador.Name = "lblJugador";
-            this.lblJugador.Size = new System.Drawing.Size(69, 19);
-            this.lblJugador.TabIndex = 17;
-            this.lblJugador.Text = "Jugador:";
+            lblJugador.AutoSize = true;
+            lblJugador.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblJugador.Location = new Point(39, 113);
+            lblJugador.Name = "lblJugador";
+            lblJugador.Size = new Size(69, 19);
+            lblJugador.TabIndex = 17;
+            lblJugador.Text = "Jugador:";
             // 
             // cmbJugador
             // 
-            this.cmbJugador.FormattingEnabled = true;
-            this.cmbJugador.Location = new System.Drawing.Point(163, 112);
-            this.cmbJugador.Name = "cmbJugador";
-            this.cmbJugador.Size = new System.Drawing.Size(133, 23);
-            this.cmbJugador.TabIndex = 16;
+            cmbJugador.FormattingEnabled = true;
+            cmbJugador.Location = new Point(163, 112);
+            cmbJugador.Name = "cmbJugador";
+            cmbJugador.Size = new Size(133, 23);
+            cmbJugador.TabIndex = 16;
             // 
             // upCantidad
             // 
-            this.upCantidad.Location = new System.Drawing.Point(163, 73);
-            this.upCantidad.Name = "upCantidad";
-            this.upCantidad.Size = new System.Drawing.Size(133, 23);
-            this.upCantidad.TabIndex = 15;
+            upCantidad.Location = new Point(163, 73);
+            upCantidad.Name = "upCantidad";
+            upCantidad.Size = new Size(133, 23);
+            upCantidad.TabIndex = 15;
             // 
             // lblCantidad
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCantidad.Location = new System.Drawing.Point(39, 73);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(73, 19);
-            this.lblCantidad.TabIndex = 14;
-            this.lblCantidad.Text = "Cantidad:";
+            lblCantidad.AutoSize = true;
+            lblCantidad.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblCantidad.Location = new Point(39, 73);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(73, 19);
+            lblCantidad.TabIndex = 14;
+            lblCantidad.Text = "Cantidad:";
             // 
             // frmAmarillas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 228);
-            this.Controls.Add(this.lblJugador);
-            this.Controls.Add(this.cmbJugador);
-            this.Controls.Add(this.upCantidad);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.btnGuardarAmarillas);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmAmarillas";
-            this.Text = "frmAmarillas";
-            this.Load += new System.EventHandler(this.frmAmarillas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.upCantidad)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(327, 228);
+            Controls.Add(lblJugador);
+            Controls.Add(cmbJugador);
+            Controls.Add(upCantidad);
+            Controls.Add(lblCantidad);
+            Controls.Add(btnGuardarAmarillas);
+            Controls.Add(lblTituloInicial);
+            Name = "frmAmarillas";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmAmarillas";
+            Load += frmAmarillas_Load;
+            ((System.ComponentModel.ISupportInitialize)upCantidad).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -1,4 +1,4 @@
-﻿//using clsTorneo;
+﻿using clsEstructuraDatos.TablasHash;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,17 +13,22 @@ namespace TorneoPOO
 {
     public partial class frmListaTorneos : Form
     {
-        public frmListaTorneos()
+        public clsTablaHashTournament tablaHashTournament;
+        public frmListaTorneos(clsTablaHashTournament tournamentNw)
         {
+            this.tablaHashTournament = tournamentNw;
             InitializeComponent();
         }
 
         private void frmListaTorneos_Load(object sender, EventArgs e)
         {
-            /*foreach (clsTorneos torneo in clsListaTorneo.torneos)
+            foreach (var item in tablaHashTournament.tabla)
             {
-                cmbTorneos.Items.Add(torneo.Nombre);
-            }*/
+                if (item != null)
+                {
+                    this.cmbTorneos.Items.Add(item.tournamentName);
+                }
+            }
         }
 
         private void cmbTorneos_SelectedIndexChanged(object sender, EventArgs e)

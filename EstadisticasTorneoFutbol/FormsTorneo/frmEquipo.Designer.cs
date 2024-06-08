@@ -28,90 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.btnGuardarEquipo = new System.Windows.Forms.Button();
-            this.lblTorneo = new System.Windows.Forms.Label();
-            this.cmbTorneo = new System.Windows.Forms.ComboBox();
-            this.txtNombreEquipo = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lblTituloInicial = new Label();
+            btnGuardarEquipo = new Button();
+            lblTorneo = new Label();
+            cmbTorneo = new ComboBox();
+            txtNombreEquipo = new TextBox();
+            lblNombre = new Label();
+            SuspendLayout();
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(78, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(165, 31);
-            this.lblTituloInicial.TabIndex = 4;
-            this.lblTituloInicial.Text = "Nuevo Equipo";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(78, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(165, 31);
+            lblTituloInicial.TabIndex = 4;
+            lblTituloInicial.Text = "Nuevo Equipo";
             // 
             // btnGuardarEquipo
             // 
-            this.btnGuardarEquipo.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnGuardarEquipo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarEquipo.Location = new System.Drawing.Point(50, 173);
-            this.btnGuardarEquipo.Name = "btnGuardarEquipo";
-            this.btnGuardarEquipo.Size = new System.Drawing.Size(227, 43);
-            this.btnGuardarEquipo.TabIndex = 8;
-            this.btnGuardarEquipo.Text = "Guardar";
-            this.btnGuardarEquipo.UseVisualStyleBackColor = false;
-            this.btnGuardarEquipo.Click += new System.EventHandler(this.btnGuardarEquipo_Click);
+            btnGuardarEquipo.BackColor = Color.MediumSeaGreen;
+            btnGuardarEquipo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnGuardarEquipo.Location = new Point(50, 173);
+            btnGuardarEquipo.Name = "btnGuardarEquipo";
+            btnGuardarEquipo.Size = new Size(227, 43);
+            btnGuardarEquipo.TabIndex = 8;
+            btnGuardarEquipo.Text = "Guardar";
+            btnGuardarEquipo.UseVisualStyleBackColor = false;
+            btnGuardarEquipo.Click += btnGuardarEquipo_Click;
             // 
             // lblTorneo
             // 
-            this.lblTorneo.AutoSize = true;
-            this.lblTorneo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTorneo.Location = new System.Drawing.Point(35, 114);
-            this.lblTorneo.Name = "lblTorneo";
-            this.lblTorneo.Size = new System.Drawing.Size(60, 19);
-            this.lblTorneo.TabIndex = 15;
-            this.lblTorneo.Text = "Torneo:";
+            lblTorneo.AutoSize = true;
+            lblTorneo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblTorneo.Location = new Point(35, 114);
+            lblTorneo.Name = "lblTorneo";
+            lblTorneo.Size = new Size(60, 19);
+            lblTorneo.TabIndex = 15;
+            lblTorneo.Text = "Torneo:";
             // 
             // cmbTorneo
             // 
-            this.cmbTorneo.FormattingEnabled = true;
-            this.cmbTorneo.Location = new System.Drawing.Point(159, 113);
-            this.cmbTorneo.Name = "cmbTorneo";
-            this.cmbTorneo.Size = new System.Drawing.Size(133, 23);
-            this.cmbTorneo.TabIndex = 14;
+            cmbTorneo.FormattingEnabled = true;
+            cmbTorneo.Location = new Point(159, 113);
+            cmbTorneo.Name = "cmbTorneo";
+            cmbTorneo.Size = new Size(133, 23);
+            cmbTorneo.TabIndex = 14;
             // 
             // txtNombreEquipo
             // 
-            this.txtNombreEquipo.Location = new System.Drawing.Point(159, 78);
-            this.txtNombreEquipo.Name = "txtNombreEquipo";
-            this.txtNombreEquipo.Size = new System.Drawing.Size(133, 23);
-            this.txtNombreEquipo.TabIndex = 12;
+            txtNombreEquipo.Location = new Point(159, 78);
+            txtNombreEquipo.Name = "txtNombreEquipo";
+            txtNombreEquipo.Size = new Size(133, 23);
+            txtNombreEquipo.TabIndex = 12;
             // 
             // lblNombre
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(35, 75);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(69, 19);
-            this.lblNombre.TabIndex = 10;
-            this.lblNombre.Text = "Nombre:";
+            lblNombre.AutoSize = true;
+            lblNombre.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblNombre.Location = new Point(35, 75);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(69, 19);
+            lblNombre.TabIndex = 10;
+            lblNombre.Text = "Nombre:";
             // 
             // frmEquipo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 228);
-            this.Controls.Add(this.lblTorneo);
-            this.Controls.Add(this.cmbTorneo);
-            this.Controls.Add(this.txtNombreEquipo);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.btnGuardarEquipo);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmEquipo";
-            this.Text = "frmEquipo";
-            this.Load += new System.EventHandler(this.frmEquipo_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(327, 228);
+            Controls.Add(lblTorneo);
+            Controls.Add(cmbTorneo);
+            Controls.Add(txtNombreEquipo);
+            Controls.Add(lblNombre);
+            Controls.Add(btnGuardarEquipo);
+            Controls.Add(lblTituloInicial);
+            Name = "frmEquipo";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmEquipo";
+            Load += frmEquipo_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

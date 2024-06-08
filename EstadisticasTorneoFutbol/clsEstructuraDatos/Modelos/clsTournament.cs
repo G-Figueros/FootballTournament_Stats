@@ -9,7 +9,7 @@ namespace clsEstructuraDatos.Modelos
 {
     public class clsTournament
     {
-        public string tournamenteName { get; set; }
-        public clsArbolAVL arbolAVL { get; set; }
+        public string tournamentName { get; set; }
+        public clsArbolAVL avlTournament { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace clsEstructuraDatos.TablasHash
 {
-    internal class clsTablaHashTeam
+    public class clsTablaHashGames
     {
     }
 }

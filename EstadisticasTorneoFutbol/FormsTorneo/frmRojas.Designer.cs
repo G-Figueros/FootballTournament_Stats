@@ -28,92 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.btnGuardarRojas = new System.Windows.Forms.Button();
-            this.lblJugador = new System.Windows.Forms.Label();
-            this.cmbJugador = new System.Windows.Forms.ComboBox();
-            this.upCantidad = new System.Windows.Forms.NumericUpDown();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.upCantidad)).BeginInit();
-            this.SuspendLayout();
+            lblTituloInicial = new Label();
+            btnGuardarRojas = new Button();
+            lblJugador = new Label();
+            cmbJugador = new ComboBox();
+            upCantidad = new NumericUpDown();
+            lblCantidad = new Label();
+            ((System.ComponentModel.ISupportInitialize)upCantidad).BeginInit();
+            SuspendLayout();
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(125, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(71, 31);
-            this.lblTituloInicial.TabIndex = 2;
-            this.lblTituloInicial.Text = "Rojas";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(125, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(71, 31);
+            lblTituloInicial.TabIndex = 2;
+            lblTituloInicial.Text = "Rojas";
             // 
             // btnGuardarRojas
             // 
-            this.btnGuardarRojas.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnGuardarRojas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarRojas.Location = new System.Drawing.Point(48, 173);
-            this.btnGuardarRojas.Name = "btnGuardarRojas";
-            this.btnGuardarRojas.Size = new System.Drawing.Size(227, 43);
-            this.btnGuardarRojas.TabIndex = 7;
-            this.btnGuardarRojas.Text = "Guardar";
-            this.btnGuardarRojas.UseVisualStyleBackColor = false;
-            this.btnGuardarRojas.Click += new System.EventHandler(this.btnGuardarRojas_Click);
+            btnGuardarRojas.BackColor = Color.MediumSeaGreen;
+            btnGuardarRojas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnGuardarRojas.Location = new Point(48, 173);
+            btnGuardarRojas.Name = "btnGuardarRojas";
+            btnGuardarRojas.Size = new Size(227, 43);
+            btnGuardarRojas.TabIndex = 7;
+            btnGuardarRojas.Text = "Guardar";
+            btnGuardarRojas.UseVisualStyleBackColor = false;
+            btnGuardarRojas.Click += btnGuardarRojas_Click;
             // 
             // lblJugador
             // 
-            this.lblJugador.AutoSize = true;
-            this.lblJugador.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJugador.Location = new System.Drawing.Point(35, 112);
-            this.lblJugador.Name = "lblJugador";
-            this.lblJugador.Size = new System.Drawing.Size(69, 19);
-            this.lblJugador.TabIndex = 13;
-            this.lblJugador.Text = "Jugador:";
+            lblJugador.AutoSize = true;
+            lblJugador.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblJugador.Location = new Point(35, 112);
+            lblJugador.Name = "lblJugador";
+            lblJugador.Size = new Size(69, 19);
+            lblJugador.TabIndex = 13;
+            lblJugador.Text = "Jugador:";
             // 
             // cmbJugador
             // 
-            this.cmbJugador.FormattingEnabled = true;
-            this.cmbJugador.Location = new System.Drawing.Point(159, 111);
-            this.cmbJugador.Name = "cmbJugador";
-            this.cmbJugador.Size = new System.Drawing.Size(133, 23);
-            this.cmbJugador.TabIndex = 12;
+            cmbJugador.FormattingEnabled = true;
+            cmbJugador.Location = new Point(159, 111);
+            cmbJugador.Name = "cmbJugador";
+            cmbJugador.Size = new Size(133, 23);
+            cmbJugador.TabIndex = 12;
             // 
             // upCantidad
             // 
-            this.upCantidad.Location = new System.Drawing.Point(159, 72);
-            this.upCantidad.Name = "upCantidad";
-            this.upCantidad.Size = new System.Drawing.Size(133, 23);
-            this.upCantidad.TabIndex = 11;
+            upCantidad.Location = new Point(159, 72);
+            upCantidad.Name = "upCantidad";
+            upCantidad.Size = new Size(133, 23);
+            upCantidad.TabIndex = 11;
             // 
             // lblCantidad
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCantidad.Location = new System.Drawing.Point(35, 72);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(73, 19);
-            this.lblCantidad.TabIndex = 10;
-            this.lblCantidad.Text = "Cantidad:";
+            lblCantidad.AutoSize = true;
+            lblCantidad.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblCantidad.Location = new Point(35, 72);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(73, 19);
+            lblCantidad.TabIndex = 10;
+            lblCantidad.Text = "Cantidad:";
             // 
             // frmRojas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 228);
-            this.Controls.Add(this.lblJugador);
-            this.Controls.Add(this.cmbJugador);
-            this.Controls.Add(this.upCantidad);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.btnGuardarRojas);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmRojas";
-            this.Text = "frmRojas";
-            this.Load += new System.EventHandler(this.frmRojas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.upCantidad)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(327, 228);
+            Controls.Add(lblJugador);
+            Controls.Add(cmbJugador);
+            Controls.Add(upCantidad);
+            Controls.Add(lblCantidad);
+            Controls.Add(btnGuardarRojas);
+            Controls.Add(lblTituloInicial);
+            Name = "frmRojas";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmRojas";
+            Load += frmRojas_Load;
+            ((System.ComponentModel.ISupportInitialize)upCantidad).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
