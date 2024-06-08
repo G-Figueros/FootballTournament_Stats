@@ -31,17 +31,18 @@
             btnVerTorneos = new Button();
             btnNuevoTorneo = new Button();
             lblTituloInicial = new Label();
+            btnDetalleTorneos = new Button();
             SuspendLayout();
             // 
             // btnVerTorneos
             // 
-            btnVerTorneos.BackColor = Color.LightCoral;
+            btnVerTorneos.BackColor = Color.MediumSeaGreen;
             btnVerTorneos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnVerTorneos.Location = new Point(47, 112);
+            btnVerTorneos.Location = new Point(47, 182);
             btnVerTorneos.Name = "btnVerTorneos";
             btnVerTorneos.Size = new Size(227, 43);
             btnVerTorneos.TabIndex = 6;
-            btnVerTorneos.Text = "Ver Torneos";
+            btnVerTorneos.Text = "Estadística Torneos";
             btnVerTorneos.UseVisualStyleBackColor = false;
             btnVerTorneos.Click += btnVerTorneos_Click;
             // 
@@ -68,12 +69,25 @@
             lblTituloInicial.TabIndex = 4;
             lblTituloInicial.Text = "Torneo";
             // 
+            // btnDetalleTorneos
+            // 
+            btnDetalleTorneos.BackColor = Color.LightCoral;
+            btnDetalleTorneos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnDetalleTorneos.Location = new Point(47, 123);
+            btnDetalleTorneos.Name = "btnDetalleTorneos";
+            btnDetalleTorneos.Size = new Size(227, 43);
+            btnDetalleTorneos.TabIndex = 7;
+            btnDetalleTorneos.Text = "Detalle Torneos";
+            btnDetalleTorneos.UseVisualStyleBackColor = false;
+            btnDetalleTorneos.Click += btnDetalleTorneos_Click;
+            // 
             // frmMenuTorneo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(327, 228);
+            ClientSize = new Size(327, 248);
+            Controls.Add(btnDetalleTorneos);
             Controls.Add(btnVerTorneos);
             Controls.Add(btnNuevoTorneo);
             Controls.Add(lblTituloInicial);
@@ -89,5 +103,6 @@
         private Button btnVerTorneos;
         private Button btnNuevoTorneo;
         private Label lblTituloInicial;
+        private Button btnDetalleTorneos;
     }
 }

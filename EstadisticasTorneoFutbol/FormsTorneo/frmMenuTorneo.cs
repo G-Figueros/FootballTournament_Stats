@@ -1,4 +1,5 @@
 ﻿using clsEstructuraDatos.TablasHash;
+using FormsTorneo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,7 @@ namespace TorneoPOO
 
         private void btnNuevoTorneo_Click(object sender, EventArgs e)
         {
-            frmTorneo torneo = new frmTorneo(this.tablaHashTournament);
+            frmTorneo torneo = new frmTorneo(this.tablaHashTournament, true, ""); //[0]:EnviarDatosGlobalesPorSesion [1]:BooleanoParaInsertarActualizar
             torneo.Show();
         }
 
@@ -30,6 +31,12 @@ namespace TorneoPOO
         {
             frmListaTorneos listaTorneos = new frmListaTorneos(this.tablaHashTournament);
             listaTorneos.Show();
+        }
+
+        private void btnDetalleTorneos_Click(object sender, EventArgs e)
+        {
+            frmDetalleTorneos udTorneos = new frmDetalleTorneos(this.tablaHashTournament);
+            udTorneos.Show();
         }
     }
 }

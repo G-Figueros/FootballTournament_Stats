@@ -31,3 +31,10 @@ C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\Footba
 C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.pdb
 C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.genruntimeconfig.cache
 C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\ref\FormsTorneo.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmDetalleTorneos.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmMinutos.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmDetalleEquipo.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmDetalleJugador.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmDetallePartido.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmMenuPartidos.resources
+C:\Gabriel\Personal\Gabriel 2024\Programación III\FINAL\RepositorioFinal\FootballTournament_Stats\EstadisticasTorneoFutbol\FormsTorneo\obj\Debug\net8.0-windows7.0\FormsTorneo.frmPartido.resources

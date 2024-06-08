@@ -15,16 +15,34 @@ namespace TorneoPOO
     public partial class frmTorneo : Form
     {
         public clsTablaHashTournament tablaHashTournament;
-        public frmTorneo(clsTablaHashTournament tournamentNw)
+        Boolean flujo = true;
+        string clave;
+        public frmTorneo(clsTablaHashTournament tournamentNw, Boolean tipoFlujo, string claveSeleccionada)
         {
             this.tablaHashTournament = tournamentNw;
+            this.flujo = tipoFlujo;
+            this.clave = claveSeleccionada;
+            
             InitializeComponent();
+
+            if (this.clave != "")
+            {
+                this.txtNombreTorneo.Text = clave;
+            }
         }
 
         private void btnGuardarTorneo_Click(object sender, EventArgs e)
         {
-            string nombre = this.txtNombreTorneo.Text;
-            this.tablaHashTournament.Insertar(nombre);
+            if(flujo == true)
+            {
+                string nombre = this.txtNombreTorneo.Text;
+                this.tablaHashTournament.Insertar(nombre);
+            }
+            else
+            {
+                this.tablaHashTournament.Actualizar(this.txtNombreTorneo.Text, clave);
+            }
+            
             this.Close();
         }
     }

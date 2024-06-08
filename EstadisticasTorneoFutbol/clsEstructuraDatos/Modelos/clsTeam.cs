@@ -12,7 +12,7 @@ namespace clsEstructuraDatos.Modelos
         public int id { get; set; }
         public string name { get; set; }
         public string country { get; set; }
-        public string league { get; set; }
+        public string tournament { get; set; }
         public string stadium { get; set; }
         public int points { get; set; }
         public int matches { get; set; }
@@ -20,12 +20,12 @@ namespace clsEstructuraDatos.Modelos
         public int loseMatches { get; set; }
         public int drawMatches { get; set; }
 
-        public clsTeam(int id, string nameNw, string countryNw, string leagueNw, string stadium)
+        public clsTeam(int id, string nameNw, string countryNw, string tournamentNw, string stadium)
         {
             this.id = id;
             this.name = nameNw;
             this.country = countryNw;
-            this.league = leagueNw;
+            this.tournament = tournamentNw;
             this.stadium = stadium;
             this.points = 0;
             this.matches = 0;
