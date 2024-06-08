@@ -28,83 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.dgvListaJugadores = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoCamisola = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TarjetasAmarillas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TarjetasRojas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Goles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaJugadores)).BeginInit();
-            this.SuspendLayout();
+            lblTituloInicial = new Label();
+            dgvListaJugadores = new DataGridView();
+            Nombre = new DataGridViewTextBoxColumn();
+            NoCamisola = new DataGridViewTextBoxColumn();
+            TarjetasAmarillas = new DataGridViewTextBoxColumn();
+            TarjetasRojas = new DataGridViewTextBoxColumn();
+            Goles = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dgvListaJugadores).BeginInit();
+            SuspendLayout();
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(222, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(179, 31);
-            this.lblTituloInicial.TabIndex = 1;
-            this.lblTituloInicial.Text = "Lista Jugadores";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(222, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(179, 31);
+            lblTituloInicial.TabIndex = 1;
+            lblTituloInicial.Text = "Lista Jugadores";
             // 
             // dgvListaJugadores
             // 
-            this.dgvListaJugadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dgvListaJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaJugadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.NoCamisola,
-            this.TarjetasAmarillas,
-            this.TarjetasRojas,
-            this.Goles});
-            this.dgvListaJugadores.Location = new System.Drawing.Point(35, 66);
-            this.dgvListaJugadores.Name = "dgvListaJugadores";
-            this.dgvListaJugadores.RowTemplate.Height = 25;
-            this.dgvListaJugadores.Size = new System.Drawing.Size(553, 243);
-            this.dgvListaJugadores.TabIndex = 2;
+            dgvListaJugadores.BackgroundColor = Color.FromArgb(255, 224, 192);
+            dgvListaJugadores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListaJugadores.Columns.AddRange(new DataGridViewColumn[] { Nombre, NoCamisola, TarjetasAmarillas, TarjetasRojas, Goles });
+            dgvListaJugadores.Location = new Point(35, 66);
+            dgvListaJugadores.Name = "dgvListaJugadores";
+            dgvListaJugadores.Size = new Size(553, 243);
+            dgvListaJugadores.TabIndex = 2;
             // 
             // Nombre
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
+            Nombre.HeaderText = "Nombre";
+            Nombre.Name = "Nombre";
             // 
             // NoCamisola
             // 
-            this.NoCamisola.HeaderText = "NoCamisola";
-            this.NoCamisola.Name = "NoCamisola";
+            NoCamisola.HeaderText = "NoCamisola";
+            NoCamisola.Name = "NoCamisola";
             // 
             // TarjetasAmarillas
             // 
-            this.TarjetasAmarillas.HeaderText = "TarjetasAmarillas";
-            this.TarjetasAmarillas.Name = "TarjetasAmarillas";
+            TarjetasAmarillas.HeaderText = "TarjetasAmarillas";
+            TarjetasAmarillas.Name = "TarjetasAmarillas";
             // 
             // TarjetasRojas
             // 
-            this.TarjetasRojas.HeaderText = "TarjetasRojas";
-            this.TarjetasRojas.Name = "TarjetasRojas";
+            TarjetasRojas.HeaderText = "TarjetasRojas";
+            TarjetasRojas.Name = "TarjetasRojas";
             // 
             // Goles
             // 
-            this.Goles.HeaderText = "Goles";
-            this.Goles.Name = "Goles";
+            Goles.HeaderText = "Goles";
+            Goles.Name = "Goles";
             // 
             // frmListaJugadores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(627, 344);
-            this.Controls.Add(this.dgvListaJugadores);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmListaJugadores";
-            this.Text = "frmListaJugadores";
-            this.Load += new System.EventHandler(this.frmListaJugadores_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaJugadores)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(627, 344);
+            Controls.Add(dgvListaJugadores);
+            Controls.Add(lblTituloInicial);
+            Name = "frmListaJugadores";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmListaJugadores";
+            Load += frmListaJugadores_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvListaJugadores).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

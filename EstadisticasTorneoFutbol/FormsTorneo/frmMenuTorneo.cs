@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clsEstructuraDatos.TablasHash;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +13,22 @@ namespace TorneoPOO
 {
     public partial class frmMenuTorneo : Form
     {
-        public frmMenuTorneo()
+        public clsTablaHashTournament tablaHashTournament;
+        public frmMenuTorneo(clsTablaHashTournament tournamentNw)
         {
+            this.tablaHashTournament = tournamentNw;
             InitializeComponent();
         }
 
         private void btnNuevoTorneo_Click(object sender, EventArgs e)
         {
-            frmTorneo torneo = new frmTorneo();
+            frmTorneo torneo = new frmTorneo(this.tablaHashTournament);
             torneo.Show();
         }
 
         private void btnVerTorneos_Click(object sender, EventArgs e)
         {
-            frmListaTorneos listaTorneos = new frmListaTorneos();
+            frmListaTorneos listaTorneos = new frmListaTorneos(this.tablaHashTournament);
             listaTorneos.Show();
         }
     }

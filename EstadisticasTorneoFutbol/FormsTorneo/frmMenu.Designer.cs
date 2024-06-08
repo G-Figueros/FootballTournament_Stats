@@ -33,6 +33,7 @@
             btnMenuJugador = new Button();
             btnMenuEquipo = new Button();
             label1 = new Label();
+            btnMenuPartidos = new Button();
             SuspendLayout();
             // 
             // lblTituloInicial
@@ -87,18 +88,30 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F);
             label1.ForeColor = Color.Purple;
-            label1.Location = new Point(61, 274);
+            label1.Location = new Point(56, 315);
             label1.Name = "label1";
             label1.Size = new Size(305, 15);
             label1.TabIndex = 4;
             label1.Text = "Gabriel Figueros (22-9287) - Jeyson Mazariegos (16-5903)";
+            // 
+            // btnMenuPartidos
+            // 
+            btnMenuPartidos.BackColor = Color.Khaki;
+            btnMenuPartidos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnMenuPartidos.Location = new Point(103, 238);
+            btnMenuPartidos.Name = "btnMenuPartidos";
+            btnMenuPartidos.Size = new Size(227, 43);
+            btnMenuPartidos.TabIndex = 5;
+            btnMenuPartidos.Text = "Menu Partidos";
+            btnMenuPartidos.UseVisualStyleBackColor = false;
             // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(429, 298);
+            ClientSize = new Size(436, 339);
+            Controls.Add(btnMenuPartidos);
             Controls.Add(label1);
             Controls.Add(btnMenuEquipo);
             Controls.Add(btnMenuJugador);
@@ -118,5 +131,6 @@
         private Button btnMenuJugador;
         private Button btnMenuEquipo;
         private Label label1;
+        private Button btnMenuPartidos;
     }
 }

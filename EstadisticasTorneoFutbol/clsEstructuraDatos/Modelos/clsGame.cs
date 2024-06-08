@@ -14,7 +14,7 @@ namespace clsEstructuraDatos.Modelos
         public string awayTeam { get; set; }
         public int awayGoalCount { get; set; }
         public string stadiumGame { get; set; }
-        public bool statusGame { get; set; }
+        public bool statusFinallyGame { get; set; }
 
         public clsGame(int idNw, 
             string homeTeamNw, 
@@ -27,7 +27,7 @@ namespace clsEstructuraDatos.Modelos
             this.awayTeam = awayTeamNw;
             this.awayGoalCount = 0;
             this.stadiumGame = stadiumGameNw;
-            this.statusGame = true;
+            this.statusFinallyGame = false;
         }
     }
 }

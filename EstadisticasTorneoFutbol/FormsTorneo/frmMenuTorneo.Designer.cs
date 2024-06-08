@@ -28,60 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVerTorneos = new System.Windows.Forms.Button();
-            this.btnNuevoTorneo = new System.Windows.Forms.Button();
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnVerTorneos = new Button();
+            btnNuevoTorneo = new Button();
+            lblTituloInicial = new Label();
+            SuspendLayout();
             // 
             // btnVerTorneos
             // 
-            this.btnVerTorneos.BackColor = System.Drawing.Color.LightCoral;
-            this.btnVerTorneos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVerTorneos.Location = new System.Drawing.Point(47, 112);
-            this.btnVerTorneos.Name = "btnVerTorneos";
-            this.btnVerTorneos.Size = new System.Drawing.Size(227, 43);
-            this.btnVerTorneos.TabIndex = 6;
-            this.btnVerTorneos.Text = "Ver Torneos";
-            this.btnVerTorneos.UseVisualStyleBackColor = false;
-            this.btnVerTorneos.Click += new System.EventHandler(this.btnVerTorneos_Click);
+            btnVerTorneos.BackColor = Color.LightCoral;
+            btnVerTorneos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnVerTorneos.Location = new Point(47, 112);
+            btnVerTorneos.Name = "btnVerTorneos";
+            btnVerTorneos.Size = new Size(227, 43);
+            btnVerTorneos.TabIndex = 6;
+            btnVerTorneos.Text = "Ver Torneos";
+            btnVerTorneos.UseVisualStyleBackColor = false;
+            btnVerTorneos.Click += btnVerTorneos_Click;
             // 
             // btnNuevoTorneo
             // 
-            this.btnNuevoTorneo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnNuevoTorneo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevoTorneo.Location = new System.Drawing.Point(47, 63);
-            this.btnNuevoTorneo.Name = "btnNuevoTorneo";
-            this.btnNuevoTorneo.Size = new System.Drawing.Size(227, 43);
-            this.btnNuevoTorneo.TabIndex = 5;
-            this.btnNuevoTorneo.Text = "Nuevo Torneo";
-            this.btnNuevoTorneo.UseVisualStyleBackColor = false;
-            this.btnNuevoTorneo.Click += new System.EventHandler(this.btnNuevoTorneo_Click);
+            btnNuevoTorneo.BackColor = SystemColors.ActiveCaption;
+            btnNuevoTorneo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnNuevoTorneo.Location = new Point(47, 63);
+            btnNuevoTorneo.Name = "btnNuevoTorneo";
+            btnNuevoTorneo.Size = new Size(227, 43);
+            btnNuevoTorneo.TabIndex = 5;
+            btnNuevoTorneo.Text = "Nuevo Torneo";
+            btnNuevoTorneo.UseVisualStyleBackColor = false;
+            btnNuevoTorneo.Click += btnNuevoTorneo_Click;
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(115, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(88, 31);
-            this.lblTituloInicial.TabIndex = 4;
-            this.lblTituloInicial.Text = "Torneo";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(115, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(88, 31);
+            lblTituloInicial.TabIndex = 4;
+            lblTituloInicial.Text = "Torneo";
             // 
             // frmMenuTorneo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 228);
-            this.Controls.Add(this.btnVerTorneos);
-            this.Controls.Add(this.btnNuevoTorneo);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmMenuTorneo";
-            this.Text = "frmMenuTorneo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(327, 228);
+            Controls.Add(btnVerTorneos);
+            Controls.Add(btnNuevoTorneo);
+            Controls.Add(lblTituloInicial);
+            Name = "frmMenuTorneo";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmMenuTorneo";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

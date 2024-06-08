@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormsTorneo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+357df9544799be9e3350e9b3b3f4974684f694a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9152a4a534a12d64749e6b3309ab3a09c1cdeb60")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormsTorneo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormsTorneo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

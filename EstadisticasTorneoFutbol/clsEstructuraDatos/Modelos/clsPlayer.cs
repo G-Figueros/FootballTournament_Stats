@@ -18,9 +18,7 @@ namespace clsEstructuraDatos.Modelos
         public int goals { get; set; }
         public int yellowCards { get; set; }
         public int redCards { get; set; }
-        public int minutesPlayedHome { get; set; }
-        public int minutesPlayedAlone { get; set; }
-
+        public int minutesPlayed { get; set; }
 
         public clsPlayer(int idNw, 
             string nameNw, 
@@ -40,8 +38,7 @@ namespace clsEstructuraDatos.Modelos
             this.goals = 0;
             this.yellowCards = 0;
             this.redCards = 0;
-            this.minutesPlayedHome = 0;
-            this.minutesPlayedAlone = 0;
+            this.minutesPlayed = 0;
         }
     }
 }

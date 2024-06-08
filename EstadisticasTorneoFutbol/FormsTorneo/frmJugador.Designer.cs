@@ -28,102 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.btnIncrementarAmarillas = new System.Windows.Forms.Button();
-            this.btnIncrementarGoles = new System.Windows.Forms.Button();
-            this.btnNuevoJugador = new System.Windows.Forms.Button();
-            this.btnIncrementarRojas = new System.Windows.Forms.Button();
-            this.btnVerJugadores = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTituloInicial = new Label();
+            btnIncrementarAmarillas = new Button();
+            btnIncrementarGoles = new Button();
+            btnNuevoJugador = new Button();
+            btnIncrementarRojas = new Button();
+            btnVerJugadores = new Button();
+            btnIncrementarMinutos = new Button();
+            SuspendLayout();
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(112, -1);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(101, 31);
-            this.lblTituloInicial.TabIndex = 1;
-            this.lblTituloInicial.Text = "Jugador";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(112, -1);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(101, 31);
+            lblTituloInicial.TabIndex = 1;
+            lblTituloInicial.Text = "Jugador";
             // 
             // btnIncrementarAmarillas
             // 
-            this.btnIncrementarAmarillas.BackColor = System.Drawing.Color.Khaki;
-            this.btnIncrementarAmarillas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnIncrementarAmarillas.Location = new System.Drawing.Point(50, 129);
-            this.btnIncrementarAmarillas.Name = "btnIncrementarAmarillas";
-            this.btnIncrementarAmarillas.Size = new System.Drawing.Size(227, 43);
-            this.btnIncrementarAmarillas.TabIndex = 6;
-            this.btnIncrementarAmarillas.Text = "Incrementar Amarillas";
-            this.btnIncrementarAmarillas.UseVisualStyleBackColor = false;
-            this.btnIncrementarAmarillas.Click += new System.EventHandler(this.btnIncrementarAmarillas_Click);
+            btnIncrementarAmarillas.BackColor = Color.Khaki;
+            btnIncrementarAmarillas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnIncrementarAmarillas.Location = new Point(50, 129);
+            btnIncrementarAmarillas.Name = "btnIncrementarAmarillas";
+            btnIncrementarAmarillas.Size = new Size(227, 43);
+            btnIncrementarAmarillas.TabIndex = 6;
+            btnIncrementarAmarillas.Text = "Incrementar Amarillas";
+            btnIncrementarAmarillas.UseVisualStyleBackColor = false;
+            btnIncrementarAmarillas.Click += btnIncrementarAmarillas_Click;
             // 
             // btnIncrementarGoles
             // 
-            this.btnIncrementarGoles.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnIncrementarGoles.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnIncrementarGoles.Location = new System.Drawing.Point(50, 80);
-            this.btnIncrementarGoles.Name = "btnIncrementarGoles";
-            this.btnIncrementarGoles.Size = new System.Drawing.Size(227, 43);
-            this.btnIncrementarGoles.TabIndex = 5;
-            this.btnIncrementarGoles.Text = "Incrementar Goles";
-            this.btnIncrementarGoles.UseVisualStyleBackColor = false;
-            this.btnIncrementarGoles.Click += new System.EventHandler(this.btnIncrementarGoles_Click);
+            btnIncrementarGoles.BackColor = Color.MediumSeaGreen;
+            btnIncrementarGoles.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnIncrementarGoles.Location = new Point(50, 80);
+            btnIncrementarGoles.Name = "btnIncrementarGoles";
+            btnIncrementarGoles.Size = new Size(227, 43);
+            btnIncrementarGoles.TabIndex = 5;
+            btnIncrementarGoles.Text = "Incrementar Goles";
+            btnIncrementarGoles.UseVisualStyleBackColor = false;
+            btnIncrementarGoles.Click += btnIncrementarGoles_Click;
             // 
             // btnNuevoJugador
             // 
-            this.btnNuevoJugador.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnNuevoJugador.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevoJugador.Location = new System.Drawing.Point(50, 33);
-            this.btnNuevoJugador.Name = "btnNuevoJugador";
-            this.btnNuevoJugador.Size = new System.Drawing.Size(227, 43);
-            this.btnNuevoJugador.TabIndex = 4;
-            this.btnNuevoJugador.Text = "Nuevo Jugador";
-            this.btnNuevoJugador.UseVisualStyleBackColor = false;
-            this.btnNuevoJugador.Click += new System.EventHandler(this.btnNuevoJugador_Click);
+            btnNuevoJugador.BackColor = SystemColors.ActiveCaption;
+            btnNuevoJugador.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnNuevoJugador.Location = new Point(50, 33);
+            btnNuevoJugador.Name = "btnNuevoJugador";
+            btnNuevoJugador.Size = new Size(227, 43);
+            btnNuevoJugador.TabIndex = 4;
+            btnNuevoJugador.Text = "Nuevo Jugador";
+            btnNuevoJugador.UseVisualStyleBackColor = false;
+            btnNuevoJugador.Click += btnNuevoJugador_Click;
             // 
             // btnIncrementarRojas
             // 
-            this.btnIncrementarRojas.BackColor = System.Drawing.Color.LightCoral;
-            this.btnIncrementarRojas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnIncrementarRojas.Location = new System.Drawing.Point(50, 178);
-            this.btnIncrementarRojas.Name = "btnIncrementarRojas";
-            this.btnIncrementarRojas.Size = new System.Drawing.Size(227, 43);
-            this.btnIncrementarRojas.TabIndex = 7;
-            this.btnIncrementarRojas.Text = "Incrementar Rojas";
-            this.btnIncrementarRojas.UseVisualStyleBackColor = false;
-            this.btnIncrementarRojas.Click += new System.EventHandler(this.btnIncrementarRojas_Click);
+            btnIncrementarRojas.BackColor = Color.LightCoral;
+            btnIncrementarRojas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnIncrementarRojas.Location = new Point(50, 178);
+            btnIncrementarRojas.Name = "btnIncrementarRojas";
+            btnIncrementarRojas.Size = new Size(227, 43);
+            btnIncrementarRojas.TabIndex = 7;
+            btnIncrementarRojas.Text = "Incrementar Rojas";
+            btnIncrementarRojas.UseVisualStyleBackColor = false;
+            btnIncrementarRojas.Click += btnIncrementarRojas_Click;
             // 
             // btnVerJugadores
             // 
-            this.btnVerJugadores.BackColor = System.Drawing.Color.Orchid;
-            this.btnVerJugadores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVerJugadores.Location = new System.Drawing.Point(50, 227);
-            this.btnVerJugadores.Name = "btnVerJugadores";
-            this.btnVerJugadores.Size = new System.Drawing.Size(227, 43);
-            this.btnVerJugadores.TabIndex = 8;
-            this.btnVerJugadores.Text = "Ver Jugadores";
-            this.btnVerJugadores.UseVisualStyleBackColor = false;
-            this.btnVerJugadores.Click += new System.EventHandler(this.btnVerJugadores_Click);
+            btnVerJugadores.BackColor = Color.Orchid;
+            btnVerJugadores.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnVerJugadores.Location = new Point(50, 276);
+            btnVerJugadores.Name = "btnVerJugadores";
+            btnVerJugadores.Size = new Size(227, 43);
+            btnVerJugadores.TabIndex = 8;
+            btnVerJugadores.Text = "Ver Jugadores";
+            btnVerJugadores.UseVisualStyleBackColor = false;
+            btnVerJugadores.Click += btnVerJugadores_Click;
+            // 
+            // btnIncrementarMinutos
+            // 
+            btnIncrementarMinutos.BackColor = Color.Coral;
+            btnIncrementarMinutos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnIncrementarMinutos.Location = new Point(50, 227);
+            btnIncrementarMinutos.Name = "btnIncrementarMinutos";
+            btnIncrementarMinutos.Size = new Size(227, 43);
+            btnIncrementarMinutos.TabIndex = 9;
+            btnIncrementarMinutos.Text = "Incrementar Minutos";
+            btnIncrementarMinutos.UseVisualStyleBackColor = false;
             // 
             // frmJugador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(325, 276);
-            this.Controls.Add(this.btnVerJugadores);
-            this.Controls.Add(this.btnIncrementarRojas);
-            this.Controls.Add(this.btnIncrementarAmarillas);
-            this.Controls.Add(this.btnIncrementarGoles);
-            this.Controls.Add(this.btnNuevoJugador);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmJugador";
-            this.Text = "frmJugador";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(328, 322);
+            Controls.Add(btnIncrementarMinutos);
+            Controls.Add(btnVerJugadores);
+            Controls.Add(btnIncrementarRojas);
+            Controls.Add(btnIncrementarAmarillas);
+            Controls.Add(btnIncrementarGoles);
+            Controls.Add(btnNuevoJugador);
+            Controls.Add(lblTituloInicial);
+            Name = "frmJugador";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "frmJugador";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -134,5 +147,6 @@
         private Button btnNuevoJugador;
         private Button btnIncrementarRojas;
         private Button btnVerJugadores;
+        private Button btnIncrementarMinutos;
     }
 }

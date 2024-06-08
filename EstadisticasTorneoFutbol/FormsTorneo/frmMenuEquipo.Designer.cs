@@ -28,60 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVerEquipos = new System.Windows.Forms.Button();
-            this.btnNuevoEquipo = new System.Windows.Forms.Button();
-            this.lblTituloInicial = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnVerEquipos = new Button();
+            btnNuevoEquipo = new Button();
+            lblTituloInicial = new Label();
+            SuspendLayout();
             // 
             // btnVerEquipos
             // 
-            this.btnVerEquipos.BackColor = System.Drawing.Color.LightCoral;
-            this.btnVerEquipos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVerEquipos.Location = new System.Drawing.Point(53, 112);
-            this.btnVerEquipos.Name = "btnVerEquipos";
-            this.btnVerEquipos.Size = new System.Drawing.Size(227, 43);
-            this.btnVerEquipos.TabIndex = 6;
-            this.btnVerEquipos.Text = "Ver Equipos";
-            this.btnVerEquipos.UseVisualStyleBackColor = false;
-            this.btnVerEquipos.Click += new System.EventHandler(this.btnVerEquipos_Click);
+            btnVerEquipos.BackColor = Color.LightCoral;
+            btnVerEquipos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnVerEquipos.Location = new Point(53, 112);
+            btnVerEquipos.Name = "btnVerEquipos";
+            btnVerEquipos.Size = new Size(227, 43);
+            btnVerEquipos.TabIndex = 6;
+            btnVerEquipos.Text = "Ver Equipos";
+            btnVerEquipos.UseVisualStyleBackColor = false;
+            btnVerEquipos.Click += btnVerEquipos_Click;
             // 
             // btnNuevoEquipo
             // 
-            this.btnNuevoEquipo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnNuevoEquipo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevoEquipo.Location = new System.Drawing.Point(53, 63);
-            this.btnNuevoEquipo.Name = "btnNuevoEquipo";
-            this.btnNuevoEquipo.Size = new System.Drawing.Size(227, 43);
-            this.btnNuevoEquipo.TabIndex = 5;
-            this.btnNuevoEquipo.Text = "Nuevo Equipo";
-            this.btnNuevoEquipo.UseVisualStyleBackColor = false;
-            this.btnNuevoEquipo.Click += new System.EventHandler(this.btnNuevoEquipo_Click);
+            btnNuevoEquipo.BackColor = SystemColors.ActiveCaption;
+            btnNuevoEquipo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnNuevoEquipo.Location = new Point(53, 63);
+            btnNuevoEquipo.Name = "btnNuevoEquipo";
+            btnNuevoEquipo.Size = new Size(227, 43);
+            btnNuevoEquipo.TabIndex = 5;
+            btnNuevoEquipo.Text = "Nuevo Equipo";
+            btnNuevoEquipo.UseVisualStyleBackColor = false;
+            btnNuevoEquipo.Click += btnNuevoEquipo_Click;
             // 
             // lblTituloInicial
             // 
-            this.lblTituloInicial.AutoSize = true;
-            this.lblTituloInicial.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloInicial.ForeColor = System.Drawing.Color.Purple;
-            this.lblTituloInicial.Location = new System.Drawing.Point(120, 9);
-            this.lblTituloInicial.Name = "lblTituloInicial";
-            this.lblTituloInicial.Size = new System.Drawing.Size(89, 31);
-            this.lblTituloInicial.TabIndex = 4;
-            this.lblTituloInicial.Text = "Equipo";
+            lblTituloInicial.AutoSize = true;
+            lblTituloInicial.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
+            lblTituloInicial.ForeColor = Color.Purple;
+            lblTituloInicial.Location = new Point(120, 9);
+            lblTituloInicial.Name = "lblTituloInicial";
+            lblTituloInicial.Size = new Size(89, 31);
+            lblTituloInicial.TabIndex = 4;
+            lblTituloInicial.Text = "Equipo";
             // 
             // frmMenuEquipo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 228);
-            this.Controls.Add(this.btnVerEquipos);
-            this.Controls.Add(this.btnNuevoEquipo);
-            this.Controls.Add(this.lblTituloInicial);
-            this.Name = "frmMenuEquipo";
-            this.Text = "frmMenuEquipo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(327, 228);
+            Controls.Add(btnVerEquipos);
+            Controls.Add(btnNuevoEquipo);
+            Controls.Add(lblTituloInicial);
+            Name = "frmMenuEquipo";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmMenuEquipo";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
