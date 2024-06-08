@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using clsEstructuraDatos;
 using clsEstructuraDatos.ListaSimple;
 using clsEstructuraDatos.TablasHash;
+using FormsTorneo;
 
 namespace TorneoPOO
 {
@@ -32,7 +33,7 @@ namespace TorneoPOO
 
         private void btnMenuJugador_Click(object sender, EventArgs e)
         {
-            frmJugador menuJugador = new frmJugador();
+            frmJugador menuJugador = new frmJugador(tablaHashPlayer, tablaHashTournament);
             menuJugador.Show();
         }
 
@@ -40,6 +41,12 @@ namespace TorneoPOO
         {
             frmMenuEquipo menuEquipo = new frmMenuEquipo(tablaHashTournament);
             menuEquipo.Show();
+        }
+
+        private void btnMenuPartidos_Click(object sender, EventArgs e)
+        {
+            frmMenuPartidos menuPartidos = new frmMenuPartidos(tablaHashGames);
+            menuPartidos.Show();
         }
     }
 }

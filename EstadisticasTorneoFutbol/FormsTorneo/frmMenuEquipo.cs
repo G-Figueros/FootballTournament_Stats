@@ -1,4 +1,5 @@
 ﻿using clsEstructuraDatos.TablasHash;
+using FormsTorneo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,7 @@ namespace TorneoPOO
 
         private void btnNuevoEquipo_Click(object sender, EventArgs e)
         {
-            frmEquipo equipo = new frmEquipo(this.tablaHashTournament);
+            frmEquipo equipo = new frmEquipo(this.tablaHashTournament, true, "");
             equipo.Show();
         }
 
@@ -34,7 +35,8 @@ namespace TorneoPOO
 
         private void btnDetalleEquipos_Click(object sender, EventArgs e)
         {
-
+            frmDetalleEquipo detalleEquipo = new frmDetalleEquipo(this.tablaHashTournament);
+            detalleEquipo.Show();
         }
     }
 }

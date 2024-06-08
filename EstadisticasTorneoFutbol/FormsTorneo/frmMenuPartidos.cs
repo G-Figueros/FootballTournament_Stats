@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clsEstructuraDatos.TablasHash;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace FormsTorneo
 {
     public partial class frmMenuPartidos : Form
     {
-        public frmMenuPartidos()
+        public clsTablaHashGames tablaHashGames;
+        public frmMenuPartidos(clsTablaHashGames tablaHashGamesNw)
         {
+            this.tablaHashGames = tablaHashGamesNw;
             InitializeComponent();
+        }
+
+        private void btnNuevoPartido_Click(object sender, EventArgs e)
+        {
+            frmPartido partido = new frmPartido();
+            partido.Show();
         }
     }
 }

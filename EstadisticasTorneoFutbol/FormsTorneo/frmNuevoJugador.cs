@@ -1,46 +1,58 @@
-﻿using System;
+﻿using clsEstructuraDatos.ArbolAVL;
+using clsEstructuraDatos.ListaSimple;
+using clsEstructuraDatos.Modelos;
+using clsEstructuraDatos.TablasHash;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using clsTorneo;
 
 namespace TorneoPOO
 {
     public partial class frmNuevoJugador : Form
     {
-        public frmNuevoJugador()
+        public clsTablaHashPlayer tablaHashPlayer;
+        public clsTablaHashTournament tablaHashTournament;
+        public List<clsTeam> teamList;
+        public frmNuevoJugador(clsTablaHashPlayer tablaHashPlayerNw, clsTablaHashTournament tablaHashTournament)
         {
+            this.tablaHashPlayer = tablaHashPlayerNw;
+            this.tablaHashTournament = tablaHashTournament;
             InitializeComponent();
         }
 
         private void btnGuardarJugador_Click(object sender, EventArgs e)
         {
             
-            string nombre = txtNombreJugador.Text;
+            /*string nombre = txtNombreJugador.Text;
             int numeroCamisola = (int)upCamisola.Value;
-            string nombreSeleccionado = cmbEquipo.SelectedItem.ToString();
+            string nombreSeleccionado = cmbEquipo.SelectedItem.ToString();*/
 
-            /*clsEquipo equipoSeleccionado = clsListaEquipo.equipos.Find(equipo => equipo.Nombre == nombreSeleccionado);
-
-            clsJugador nuevoJugador = new clsJugador(nombre, numeroCamisola);
-            clsListaJugadores.jugadores.Add(nuevoJugador);
-
-            clsJugador.insertarJugador(equipoSeleccionado, nuevoJugador);*/
+            
 
             this.Close();
         }
 
         private void frmNuevoJugador_Load(object sender, EventArgs e)
         {
-            /*foreach (clsEquipo equipo in clsListaEquipo.equipos)
+
+            clsNodo indice;
+            clsLista listaNueva = new clsLista();
+
+            clsTournament torneo = (clsTournament)tablaHashTournament.Buscar("LaLiga");
+            teamList = clsArbolAVL.orden(torneo.avlTournament.raizArbol(), new List<clsTeam>());
+            var listaOrdenada = teamList.OrderByDescending(e => e.points).ToList();
+            foreach (clsTeam equipo in listaOrdenada)
             {
-                cmbEquipo.Items.Add(equipo.Nombre);
-            }*/
+                cmbEquipo.Items.Add(equipo.name);
+            }
+
         }
     }
 }

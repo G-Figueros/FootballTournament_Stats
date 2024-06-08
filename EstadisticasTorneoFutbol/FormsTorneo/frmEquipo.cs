@@ -1,4 +1,5 @@
 ﻿//using clsTorneo;
+using clsEstructuraDatos.Modelos;
 using clsEstructuraDatos.TablasHash;
 using System;
 using System.Collections.Generic;
@@ -9,16 +10,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TorneoPOO
 {
     public partial class frmEquipo : Form
     {
         public clsTablaHashTournament tablaHashTournament;
-        public frmEquipo(clsTablaHashTournament tournamentNw)
+        public string gridSelected;
+        bool flujo = true;
+
+        string clave;
+        public frmEquipo(clsTablaHashTournament tournamentNw, bool tipoFlujo, string claveSeleccionada)
         {
             this.tablaHashTournament = tournamentNw;
+            this.flujo = tipoFlujo;
+            this.clave = claveSeleccionada;
             InitializeComponent();
+            if (this.clave != "")
+            {
+                this.txtNombreEquipo.Text = clave;
+                this.cmbTorneo.Enabled = false;
+            }
         }
 
         private void frmEquipo_Load(object sender, EventArgs e)
@@ -34,15 +47,26 @@ namespace TorneoPOO
 
         private void btnGuardarEquipo_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombreEquipo.Text;
-            string nombreSeleccionado = cmbTorneo.SelectedItem.ToString();
+            if (flujo == true) { 
+                string nombre = txtNombreEquipo.Text;
+                string pais = txtPais.Text;
+                string estadio = txtEstadio.Text;
+                string claveTorneo = cmbTorneo.SelectedItem.ToString();
 
-            /*clsTorneos torneoSeleccionado = clsListaTorneo.torneos.Find(torneo => torneo.Nombre == nombreSeleccionado);
+                clsTournament torneo = (clsTournament)tablaHashTournament.Buscar(claveTorneo);
 
-            clsEquipo nuevoEquipo = new clsEquipo(nombre);
-            clsListaEquipo.equipos.Add(nuevoEquipo);
-
-            clsEquipo.insertarEquipo(torneoSeleccionado, nuevoEquipo);*/
+                clsTeam equipo = new clsTeam((torneo.avlTournament.posicion + 1), nombre, pais, claveTorneo, estadio);
+                torneo.avlTournament.insertar(equipo);
+            }
+            else
+            {
+                string nombre = txtNombreEquipo.Text;
+                string pais = txtPais.Text;
+                string estadio = txtEstadio.Text;
+                clsTournament torneo = (clsTournament)tablaHashTournament.Buscar(clave);
+                clsTeam equipo = new clsTeam((torneo.avlTournament.posicion + 1), nombre, pais, clave, estadio);
+                torneo.avlTournament.actualizar(equipo);
+            }
 
             this.Close();
         }
