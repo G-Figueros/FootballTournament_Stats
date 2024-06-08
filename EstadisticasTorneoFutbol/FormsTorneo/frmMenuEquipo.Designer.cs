@@ -31,17 +31,18 @@
             btnVerEquipos = new Button();
             btnNuevoEquipo = new Button();
             lblTituloInicial = new Label();
+            btnDetalleEquipos = new Button();
             SuspendLayout();
             // 
             // btnVerEquipos
             // 
-            btnVerEquipos.BackColor = Color.LightCoral;
+            btnVerEquipos.BackColor = Color.MediumSeaGreen;
             btnVerEquipos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnVerEquipos.Location = new Point(53, 112);
+            btnVerEquipos.Location = new Point(53, 183);
             btnVerEquipos.Name = "btnVerEquipos";
             btnVerEquipos.Size = new Size(227, 43);
             btnVerEquipos.TabIndex = 6;
-            btnVerEquipos.Text = "Ver Equipos";
+            btnVerEquipos.Text = "Estadísticas Equipos";
             btnVerEquipos.UseVisualStyleBackColor = false;
             btnVerEquipos.Click += btnVerEquipos_Click;
             // 
@@ -68,12 +69,25 @@
             lblTituloInicial.TabIndex = 4;
             lblTituloInicial.Text = "Equipo";
             // 
+            // btnDetalleEquipos
+            // 
+            btnDetalleEquipos.BackColor = Color.LightCoral;
+            btnDetalleEquipos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnDetalleEquipos.Location = new Point(53, 124);
+            btnDetalleEquipos.Name = "btnDetalleEquipos";
+            btnDetalleEquipos.Size = new Size(227, 43);
+            btnDetalleEquipos.TabIndex = 8;
+            btnDetalleEquipos.Text = "Detalle Equipos";
+            btnDetalleEquipos.UseVisualStyleBackColor = false;
+            btnDetalleEquipos.Click += btnDetalleEquipos_Click;
+            // 
             // frmMenuEquipo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(327, 228);
+            ClientSize = new Size(327, 248);
+            Controls.Add(btnDetalleEquipos);
             Controls.Add(btnVerEquipos);
             Controls.Add(btnNuevoEquipo);
             Controls.Add(lblTituloInicial);
@@ -89,5 +103,6 @@
         private Button btnVerEquipos;
         private Button btnNuevoEquipo;
         private Label lblTituloInicial;
+        private Button btnDetalleEquipos;
     }
 }

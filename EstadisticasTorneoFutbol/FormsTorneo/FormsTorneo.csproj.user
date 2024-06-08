@@ -4,6 +4,18 @@
     <Compile Update="frmAmarillas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmDetalleEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDetalleJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDetallePartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDetalleTorneos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,10 +40,19 @@
     <Compile Update="frmMenuEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmMenuPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmMenuTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmMinutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmNuevoJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPartido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmRojas.cs">

@@ -34,6 +34,10 @@
             cmbTorneo = new ComboBox();
             txtNombreEquipo = new TextBox();
             lblNombre = new Label();
+            txtPais = new TextBox();
+            label1 = new Label();
+            txtEstadio = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // lblTituloInicial
@@ -51,7 +55,7 @@
             // 
             btnGuardarEquipo.BackColor = Color.MediumSeaGreen;
             btnGuardarEquipo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnGuardarEquipo.Location = new Point(50, 173);
+            btnGuardarEquipo.Location = new Point(45, 267);
             btnGuardarEquipo.Name = "btnGuardarEquipo";
             btnGuardarEquipo.Size = new Size(227, 43);
             btnGuardarEquipo.TabIndex = 8;
@@ -63,7 +67,7 @@
             // 
             lblTorneo.AutoSize = true;
             lblTorneo.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblTorneo.Location = new Point(35, 114);
+            lblTorneo.Location = new Point(35, 213);
             lblTorneo.Name = "lblTorneo";
             lblTorneo.Size = new Size(60, 19);
             lblTorneo.TabIndex = 15;
@@ -72,7 +76,7 @@
             // cmbTorneo
             // 
             cmbTorneo.FormattingEnabled = true;
-            cmbTorneo.Location = new Point(159, 113);
+            cmbTorneo.Location = new Point(159, 212);
             cmbTorneo.Name = "cmbTorneo";
             cmbTorneo.Size = new Size(133, 23);
             cmbTorneo.TabIndex = 14;
@@ -94,12 +98,50 @@
             lblNombre.TabIndex = 10;
             lblNombre.Text = "Nombre:";
             // 
+            // txtPais
+            // 
+            txtPais.Location = new Point(159, 121);
+            txtPais.Name = "txtPais";
+            txtPais.Size = new Size(133, 23);
+            txtPais.TabIndex = 17;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            label1.Location = new Point(35, 118);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 19);
+            label1.TabIndex = 16;
+            label1.Text = "Pais:";
+            // 
+            // txtEstadio
+            // 
+            txtEstadio.Location = new Point(159, 167);
+            txtEstadio.Name = "txtEstadio";
+            txtEstadio.Size = new Size(133, 23);
+            txtEstadio.TabIndex = 19;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            label2.Location = new Point(35, 164);
+            label2.Name = "label2";
+            label2.Size = new Size(61, 19);
+            label2.TabIndex = 18;
+            label2.Text = "Estadio:";
+            // 
             // frmEquipo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(327, 228);
+            ClientSize = new Size(311, 325);
+            Controls.Add(txtEstadio);
+            Controls.Add(label2);
+            Controls.Add(txtPais);
+            Controls.Add(label1);
             Controls.Add(lblTorneo);
             Controls.Add(cmbTorneo);
             Controls.Add(txtNombreEquipo);
@@ -122,5 +164,9 @@
         private ComboBox cmbTorneo;
         private TextBox txtNombreEquipo;
         private Label lblNombre;
+        private TextBox txtPais;
+        private Label label1;
+        private TextBox txtEstadio;
+        private Label label2;
     }
 }

@@ -35,6 +35,7 @@
             btnIncrementarRojas = new Button();
             btnVerJugadores = new Button();
             btnIncrementarMinutos = new Button();
+            btnDetalleJugadores = new Button();
             SuspendLayout();
             // 
             // lblTituloInicial
@@ -62,7 +63,7 @@
             // 
             // btnIncrementarGoles
             // 
-            btnIncrementarGoles.BackColor = Color.MediumSeaGreen;
+            btnIncrementarGoles.BackColor = Color.Plum;
             btnIncrementarGoles.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnIncrementarGoles.Location = new Point(50, 80);
             btnIncrementarGoles.Name = "btnIncrementarGoles";
@@ -86,7 +87,7 @@
             // 
             // btnIncrementarRojas
             // 
-            btnIncrementarRojas.BackColor = Color.LightCoral;
+            btnIncrementarRojas.BackColor = Color.MistyRose;
             btnIncrementarRojas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnIncrementarRojas.Location = new Point(50, 178);
             btnIncrementarRojas.Name = "btnIncrementarRojas";
@@ -98,13 +99,13 @@
             // 
             // btnVerJugadores
             // 
-            btnVerJugadores.BackColor = Color.Orchid;
+            btnVerJugadores.BackColor = Color.MediumSeaGreen;
             btnVerJugadores.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnVerJugadores.Location = new Point(50, 276);
+            btnVerJugadores.Location = new Point(50, 330);
             btnVerJugadores.Name = "btnVerJugadores";
             btnVerJugadores.Size = new Size(227, 43);
             btnVerJugadores.TabIndex = 8;
-            btnVerJugadores.Text = "Ver Jugadores";
+            btnVerJugadores.Text = "Estadísticas Jugadores";
             btnVerJugadores.UseVisualStyleBackColor = false;
             btnVerJugadores.Click += btnVerJugadores_Click;
             // 
@@ -119,12 +120,24 @@
             btnIncrementarMinutos.Text = "Incrementar Minutos";
             btnIncrementarMinutos.UseVisualStyleBackColor = false;
             // 
+            // btnDetalleJugadores
+            // 
+            btnDetalleJugadores.BackColor = Color.LightCoral;
+            btnDetalleJugadores.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnDetalleJugadores.Location = new Point(50, 276);
+            btnDetalleJugadores.Name = "btnDetalleJugadores";
+            btnDetalleJugadores.Size = new Size(227, 43);
+            btnDetalleJugadores.TabIndex = 10;
+            btnDetalleJugadores.Text = "Detalles Jugadores";
+            btnDetalleJugadores.UseVisualStyleBackColor = false;
+            // 
             // frmJugador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(328, 322);
+            ClientSize = new Size(331, 385);
+            Controls.Add(btnDetalleJugadores);
             Controls.Add(btnIncrementarMinutos);
             Controls.Add(btnVerJugadores);
             Controls.Add(btnIncrementarRojas);
@@ -148,5 +161,6 @@
         private Button btnIncrementarRojas;
         private Button btnVerJugadores;
         private Button btnIncrementarMinutos;
+        private Button btnDetalleJugadores;
     }
 }

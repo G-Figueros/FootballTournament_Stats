@@ -31,5 +31,10 @@ namespace TorneoPOO
             frmListaEquipos listaEquipos = new frmListaEquipos();
             listaEquipos.Show();
         }
+
+        private void btnDetalleEquipos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
